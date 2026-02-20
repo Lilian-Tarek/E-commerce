@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #880d1e;
+  /* --color-secondary: #6FDDEB; */
+  --color-secondary:#f5c4ab;
+  --color-accent: #dd2d4a;
+  --color-light:#f49cbb;
+  --color-blue:#251351;
+}
+.active {
+  position: relative;
+  color: var(--color-primary);
+}
+
+.font-Arimo
+{
+    font-family:"Arimo"
+}
+body
+{
+  background-color:#fff;
+ 
+}
+@keyframes pumping {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.8);
+    color:#880d1e;
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.start {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 9999;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

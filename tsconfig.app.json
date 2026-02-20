@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+    
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+"baseUrl":".",
+"paths": {
+ "@assets/*":["src/assets/*"] ,
+  "@components/*": ["src/Components/*"],
+      "@hooks/*": ["src/Hooks/*"],
+      "@pages/*": ["src/Pages/*"],
+      "@routes/*": ["src/Routes/*"],
+      "@store/*": ["src/Store/*"],
+      "@layout/*": ["src/Layout/*"],
+      "@util/*": ["src/util/*"],
+      "@services/*": ["src/services/*"],
+      "@types/*":["src/Types/*"]
+},
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src"]
+}
