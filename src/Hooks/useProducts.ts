@@ -21,11 +21,13 @@ export default function useProducts() {
       const CartItems = useAppSelector((state) => state.CartSlice.items);
       const WishListItemsId = useAppSelector(
         (state) => state.WishListSlice.ItemsIds
-      );
+  );
+  const userAccess = useAppSelector((state) => state.AuthSlice.accessToken);
       const ProductsFullInfo = products.map((el) => ({
         ...el,
         quantity: CartItems[el.id] || 0,
-        isLiked: WishListItemsId.includes(el.id)
+        isLiked: WishListItemsId.includes(el.id),
+        isAuthenticated:userAccess?true:false
       }));
 
     return {

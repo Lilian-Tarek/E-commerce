@@ -16,44 +16,47 @@ import CategoriesSlice from '@store/Categories/CategorySlice'
 import ProductsSlice from '@store/Products/ProductSlice'
 import CartSlice from '@store/Cart/CartSlice'
 import WishListSlice from "@store/WishList/WishListSlice";
+import AuthSlice from "@store/Auth/AuthSlice"
 // import persistReducer from "redux-persist/es/persistReducer";
-// const rootPersistConfig = {
-//   key: "root",
-//   storage,
-//   whitelist:["CartSlice"]
-// };
-const CartPersistConfig = {
+const rootPersistConfig = {
   key: "root",
+  storage,
+  whitelist:["CartSlice","AuthSlice"]
+};
+const AuthPersistConfig = {
+  key: "AuthSlice",
+  storage,
+  whitelist: ["user","accessToken"]
+};
+
+const CartPersistConfig = {
+  // key: "root",
+  key:"CartSlice",
   storage,
   whitelist: ["items"]
 };
-const WishListPersistConfig = {
-  key: "wishlist",
-  storage,
-  whitelist:["ItemsIds"]
-}
+// const WishListPersistConfig = {
+//   key: "wishlist",
+//   storage,
+//   whitelist:["ItemsIds"]
+// }
 const rootReducer = combineReducers({
   CategoriesSlice,
   ProductsSlice,
   CartSlice: persistReducer(CartPersistConfig, CartSlice),
-  WishListSlice: persistReducer(WishListPersistConfig, WishListSlice)
+  WishListSlice:WishListSlice,
+    // : persistReducer(WishListPersistConfig, WishListSlice),
+  AuthSlice: persistReducer(AuthPersistConfig,AuthSlice)
 });
-// const persistedReducer = persistReducer(rootPersistConfig, rootReducer)
+const persistedReducer = persistReducer(rootPersistConfig, rootReducer)
 const store = configureStore({
-  reducer: rootReducer,
-   middleware: (getDefaultMiddleware) =>
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: [
-          FLUSH,
-          REHYDRATE,
-          PAUSE,
-          PERSIST,
-          PURGE,
-          REGISTER,
-        ],
-      },
-    }),
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
+      }
+    })
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

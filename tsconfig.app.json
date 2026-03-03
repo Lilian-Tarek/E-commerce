@@ -28,7 +28,8 @@
       "@layout/*": ["src/Layout/*"],
       "@util/*": ["src/util/*"],
       "@services/*": ["src/services/*"],
-      "@types/*":["src/Types/*"]
+      "@types/*":["src/Types/*"],
+      "@validation/*":["src/Validation/*"]
 },
     /* Linting */
     "strict": true,

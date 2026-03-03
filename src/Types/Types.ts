@@ -8,7 +8,8 @@ export type TProductItem = {
   img: string;
   quantity: number;
   max: number,
-  isLiked:boolean
+  isLiked: boolean,
+  isAuthenticated?:boolean
 };
 
 export type Tproduct = TProductItem[];

@@ -12,8 +12,10 @@ const  Login= lazy(() => import("@pages/Login"));
 import Error from '@pages/Error';
 const  Cart= lazy(() => import("@pages/Cart"));
 const WishListPage = lazy(() => import("@pages/WishListPage"));
+const ProfilePage = lazy(() => import("@pages/Profile"));
 import Lottie from "lottie-react"; 
 import SuspenseHandler from '@components/feedback/SuspenseHandler';
+import ProtectedRoute from '@components/auth/ProtectedRoute';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,7 +30,7 @@ const router = createBrowserRouter([
         index: true,
         element: (
           <SuspenseHandler>
-              <Home />
+            <Home />
           </SuspenseHandler>
         )
       },
@@ -95,9 +97,21 @@ const router = createBrowserRouter([
       {
         path: "/wishlist",
         element: (
-          <SuspenseHandler>
-            <WishListPage />
-          </SuspenseHandler>
+          <ProtectedRoute>
+            <SuspenseHandler>
+              <WishListPage />
+            </SuspenseHandler>
+          </ProtectedRoute>
+        )
+      },
+      {
+        path: "/profile",
+        element: (
+          <ProtectedRoute>
+            <SuspenseHandler>
+              <ProfilePage />
+            </SuspenseHandler>
+          </ProtectedRoute>
         )
       }
     ]

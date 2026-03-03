@@ -16,7 +16,8 @@ export default defineConfig({
       "@layout": path.resolve(__dirname, "./src/layout"),
       "@util": path.resolve(__dirname, "./src/util"),
       "@services": path.resolve(__dirname, "./src/services"),
-      "@types": path.resolve(__dirname, "./src/types")
+      "@types": path.resolve(__dirname, "./src/types"),
+      "@validation": path.resolve(__dirname,"./src/Validation")
     }
   },
   plugins: [tailwindcss(), react()]

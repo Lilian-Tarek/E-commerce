@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    // "start": "json-server db.json"
-    "start": "json-server --watch db.json --port 5000 --cors"
+    "start": "json-server-auth db.json"
   },
   "author": "Lilian",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "json-server": "^0.17.4"
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
   }
 }

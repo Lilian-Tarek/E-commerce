@@ -11,7 +11,7 @@ export default function useWishlist() {
           );
           const CartItems = useAppSelector((state) => state.CartSlice.items);
           useEffect(() => {
-         const promise=dispatch(ActGetLikedItems());
+         const promise=dispatch(ActGetLikedItems("productFullInfo"));
             return () => {
                promise.abort();
               dispatch(productFullinfoClean());
@@ -19,10 +19,12 @@ export default function useWishlist() {
 
              }
           }, [dispatch]);
-          const Records = productFullInfo.map((el) => ({
+    const userAccess = useAppSelector((state) => state.AuthSlice.accessToken);
+          const Records = (productFullInfo||[]).map((el) => ({
             ...el,
             quantity: CartItems[el.id] || 0,
-            isLiked: true
+             isLiked: true,
+             isAuthenticated:userAccess?true:false
           }));
     return {
   
