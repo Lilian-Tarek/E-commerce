@@ -22,24 +22,28 @@ const CartSlice = createSlice({
       const id = action.payload;
       if (state.items[id]) {
         state.items[id]++;
-      }
-      else {
+      } else {
         state.items[id] = 1;
       }
     },
-    CartItemsChangeQuantity: (state,action) => {
+    CartItemsChangeQuantity: (state, action) => {
       state.items[action.payload.id] = action.payload.quantity;
     },
     RemoveFromCart: (state, action) => {
       delete state.items[action.payload];
-    state.productFullInfo= state.productFullInfo.filter((el) => {return el.id !== action.payload})
+      state.productFullInfo = state.productFullInfo.filter((el) => {
+        return el.id !== action.payload;
+      });
     },
     CleanCart: (state) => {
       state.productFullInfo = [];
+    },
+    CleanCartAfterBuying: (state) => {
+      state.items = {};
+      state.productFullInfo = [];
     }
-
   },
-  
+
   extraReducers: (builder) => {
     builder.addCase(ActGetCartItems.pending, (state) => {
       state.loading = "pending";
@@ -51,12 +55,12 @@ const CartSlice = createSlice({
     });
     builder.addCase(ActGetCartItems.rejected, (state, action) => {
       state.loading = "failed";
-      if (isString(action.payload )) {
+      if (isString(action.payload)) {
         state.error = action.payload;
       }
-});
-    }
+    });
+  }
 });
 
-export const {AddToCart,CartItemsChangeQuantity,RemoveFromCart,CleanCart} = CartSlice.actions;
+export const {AddToCart,CartItemsChangeQuantity,RemoveFromCart,CleanCart,CleanCartAfterBuying} = CartSlice.actions;
 export default CartSlice.reducer;

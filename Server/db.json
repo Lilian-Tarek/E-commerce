@@ -109,19 +109,24 @@
       "id": 9
     },
     {
-      "userId": "1",
+      "userId": "14",
       "productId": 1,
-      "id": 10
-    },
-    {
-      "userId": "1",
-      "productId": 5,
-      "id": 11
+      "id": 12
     },
     {
       "userId": "14",
       "productId": 2,
       "id": 13
+    },
+    {
+      "userId": "1",
+      "productId": 1,
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "productId": 2,
+      "id": 15
     }
   ],
   "users": [
@@ -222,6 +227,239 @@
       "firstName": "lilian",
       "lastName": "tarek",
       "id": 14
+    },
+    {
+      "email": "dinadina@gmail.com",
+      "password": "$2a$10$EHjSLT4gL0dSG9dRwh5LpO8FL6WzAsbFcRA.ZPGJOxmUcT8U4GAD2",
+      "firstName": "dina",
+      "lastName": "tarek",
+      "id": 15
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "title": "Regular Fit Jersey top",
+          "price": "249.00",
+          "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "title": "Regular Fit Jersey top",
+          "price": "229.00",
+          "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 478,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "title": "Regular Fit Jersey top",
+          "price": "249.00",
+          "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+          "quantity": 3
+        },
+        {
+          "id": 2,
+          "title": "Regular Fit Jersey top",
+          "price": "229.00",
+          "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Cotton polo shirt",
+          "price": "200.00",
+          "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4",
+          "quantity": 3
+        }
+      ],
+      "subtotal": 1576,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "title": "Regular Fit Jersey top",
+          "price": "249.00",
+          "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 249,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 6,
+          "title": "Velour top",
+          "price": "300.00",
+          "img": "https://images.unsplash.com/photo-1604916287784-c324202b320c",
+          "quantity": 2
+        }
+      ],
+      "subtotal": 600,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 5,
+          "title": "Sweatshirt shorts",
+          "price": "300.00",
+          "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 300,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 4,
+          "title": "Cotton t-shirt",
+          "price": "100.00",
+          "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 100,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 17,
+          "title": "Regular Fit football shirt",
+          "price": "449.00",
+          "img": "https://images.unsplash.com/photo-1517649763962-0c623066013b",
+          "quantity": 2
+        }
+      ],
+      "subtotal": 898,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 4,
+          "title": "Cotton t-shirt",
+          "price": "100.00",
+          "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "title": "Sweatshirt shorts",
+          "price": "300.00",
+          "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 400,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 4,
+          "title": "Cotton t-shirt",
+          "price": "100.00",
+          "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+          "quantity": 2
+        },
+        {
+          "id": 5,
+          "title": "Sweatshirt shorts",
+          "price": "300.00",
+          "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 500,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 2,
+          "title": "Regular Fit Jersey top",
+          "price": "229.00",
+          "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Cotton polo shirt",
+          "price": "200.00",
+          "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 429,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 4,
+          "title": "Cotton t-shirt",
+          "price": "100.00",
+          "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "title": "Sweatshirt shorts",
+          "price": "300.00",
+          "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 400,
+      "id": 11
+    },
+    {
+      "userId": 15,
+      "items": [
+        {
+          "id": 2,
+          "title": "Regular Fit Jersey top",
+          "price": "229.00",
+          "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Cotton polo shirt",
+          "price": "200.00",
+          "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 429,
+      "id": 12
     }
   ]
 }

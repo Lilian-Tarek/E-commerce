@@ -53,10 +53,10 @@ const Header = () => {
 
             {openWelcome && (
               <div className="mt-2 ml-2 flex flex-col gap-2 border-2 border-primary pl-3 z-99 absolute left-0 top-8 bg-white p-2 rounded w-full text-center">
-                <NavLink className="text-base" to="/profile">
+                <NavLink className="text-base" to="/profile"end>
                   Profile
                 </NavLink>
-                <NavLink className="text-base" to="/orders">
+                <NavLink className="text-base" to="profile/orders">
                   Orders
                 </NavLink>
                 <NavLink className="text-base" to="/" onClick={()=>dispatch(Logout())}>

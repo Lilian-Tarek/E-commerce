@@ -17,6 +17,7 @@ import ProductsSlice from '@store/Products/ProductSlice'
 import CartSlice from '@store/Cart/CartSlice'
 import WishListSlice from "@store/WishList/WishListSlice";
 import AuthSlice from "@store/Auth/AuthSlice"
+import OrderSlice from "@store/Order/OrderSlice"
 // import persistReducer from "redux-persist/es/persistReducer";
 const rootPersistConfig = {
   key: "root",
@@ -46,7 +47,8 @@ const rootReducer = combineReducers({
   CartSlice: persistReducer(CartPersistConfig, CartSlice),
   WishListSlice:WishListSlice,
     // : persistReducer(WishListPersistConfig, WishListSlice),
-  AuthSlice: persistReducer(AuthPersistConfig,AuthSlice)
+  AuthSlice: persistReducer(AuthPersistConfig, AuthSlice),
+  OrderSlice
 });
 const persistedReducer = persistReducer(rootPersistConfig, rootReducer)
 const store = configureStore({

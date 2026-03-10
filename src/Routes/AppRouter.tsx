@@ -2,13 +2,15 @@ import React, { Suspense } from 'react'
 import { lazy } from 'react';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 const MainLayout = lazy(() => import("@layout/MainLayout"));
+const ProfileLayout = lazy(() => import("@layout/ProfileLayout"));
 import SandyLoading from '../Assets/SandyLoading.json'
 const Home = lazy(() => import("@pages/Home"));
 const About = lazy(() => import("@pages/About"));
 const Register = lazy(() => import("@pages/Register"));
 const Categories = lazy(() => import("@pages/Categories"));
 const  Products= lazy(() => import("@pages/Products"));
-const  Login= lazy(() => import("@pages/Login"));
+const Login = lazy(() => import("@pages/Login"));
+const Orders = lazy(() => import("@pages/Orders"));
 import Error from '@pages/Error';
 const  Cart= lazy(() => import("@pages/Cart"));
 const WishListPage = lazy(() => import("@pages/WishListPage"));
@@ -109,10 +111,28 @@ const router = createBrowserRouter([
         element: (
           <ProtectedRoute>
             <SuspenseHandler>
-              <ProfilePage />
+              <ProfileLayout />
             </SuspenseHandler>
           </ProtectedRoute>
-        )
+        ),
+        children: [
+          {
+            index: true,
+            element: (
+              <SuspenseHandler>
+                <ProfilePage />
+              </SuspenseHandler>
+            )
+          },
+          {
+            path:"orders",
+            element: (
+              <SuspenseHandler>
+                <Orders />
+              </SuspenseHandler>
+            )
+          }
+        ]
       }
     ]
   }

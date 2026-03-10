@@ -11,5 +11,10 @@ export type TProductItem = {
   isLiked: boolean,
   isAuthenticated?:boolean
 };
-
 export type Tproduct = TProductItem[];
+export type TOrderItem = {
+  id: number;
+  userId: number;
+  items: Tproduct;
+  subtotal: number;
+};

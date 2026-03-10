@@ -3,12 +3,12 @@ import Heading from '@components/commons/Heading'
 import CartItemsList from '@components/e-commerce/CartItemsList';
 import CartTotalPrice from '@components/e-commerce/CartTotalPrice';
 import useCart from '@hooks/useCart';
-
+import success from "@assets/success.json"
 import { Loading } from "@components/feedback";
 import Lottie from "lottie-react";
 import NoResult from "../Assets/noresultfound.json";
 const Cart = () => {
-  const { error, loading,products,changeQuantityHandler,RemoveItemHandler } = useCart();
+  const { error, loading,products,changeQuantityHandler,RemoveItemHandler,userAccessToken,placeOrderStatus } = useCart();
   return (
     <div>
       <Heading title="Cart" />
@@ -33,13 +33,21 @@ const Cart = () => {
                     change={changeQuantityHandler}
                     remove={RemoveItemHandler}
                   />
-                  <CartTotalPrice products={products} />
+                  <CartTotalPrice
+                    products={products}
+                    userAccessToken={userAccessToken}
+                  />
                 </tbody>
               </table>
             </div>
           </>
+        ) : placeOrderStatus === "succeeded" ? (
+          <div className="w-full flex justify-center ">
+              <Lottie animationData={success} className="w-100" />
+              <h1 className='text-primary d-block'>All ok!</h1>
+          </div>
         ) : (
-          <div className='w-full flex justify-center'>
+          <div className="w-full flex justify-center">
             <Lottie animationData={NoResult} className="w-100" />
           </div>
         )}
