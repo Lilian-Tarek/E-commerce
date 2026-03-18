@@ -1,33 +1,36 @@
-import React, { useState } from 'react'
-import type { Tproduct } from '@types/Types'
-import PlaceOrder from '@store/Act/ActOrder';
-import { useAppDispatch } from '@store/hooks';
-import { CleanCartAfterBuying } from '@store/Cart/CartSlice';
-import success  from '@assets/success.json';
+import { useState } from "react";
+import type { Tproduct } from "@Types/Types";
+import PlaceOrder from "@store/Order/ActOrder";
+import { useAppDispatch } from "@store/hooks";
+import { CleanCartAfterBuying } from "@store/Cart/CartSlice";
 type CartTotalPrice = {
-  products: Tproduct,
-  userAccessToken:string|null
+  products: Tproduct;
+  userAccessToken: string | null;
 };
 const CartTotalPrice = ({ products, userAccessToken }: CartTotalPrice) => {
   const dispatch = useAppDispatch();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const subtotal = products.reduce((acc, el) => {
-    const price = el.price; 
+    const price = el.price;
     const quantity = el.quantity;
-    return acc+ ( Number(price) * Number(quantity))
-  }, 0)
+    return acc + Number(price) * Number(quantity);
+  }, 0);
   const [ShowModal, setShowModal] = useState(false);
   const PlaceOrderHandler = () => {
     setLoading(true);
     dispatch(PlaceOrder(subtotal))
       .unwrap()
-      .then(() => {dispatch(CleanCartAfterBuying())})
-      .catch((error) => {setError(error)})
+      .then(() => {
+        dispatch(CleanCartAfterBuying());
+      })
+      .catch((error) => {
+        setError(error);
+      })
       .finally(() => {
         setLoading(false);
       });
-  }
+  };
   return (
     <>
       {ShowModal && (
@@ -86,6 +89,6 @@ const CartTotalPrice = ({ products, userAccessToken }: CartTotalPrice) => {
       )}
     </>
   );
-}
+};
 
-export default CartTotalPrice
+export default CartTotalPrice;

@@ -1,12 +1,10 @@
 import { useForm } from "react-hook-form";
-import Heading from "@components/commons/Heading";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signup, type TFormInputs } from "@validation/RegisterationSchema";
-import Form from "@components/form/Form";
 import useCheckEmailAvail from "@hooks/useCheckEmailAvail";
-import ActAuthRegister from "@store/Act/ActAuthRegister";
+import ActAuthRegister from "@store/Auth/ActAuthRegister";
 import { useAppDispatch, useAppSelector } from "@store/hooks";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { ResetUi } from "@store/Auth/AuthSlice";
 import { useEffect } from "react";
 export default function useRegister() {
@@ -57,15 +55,15 @@ export default function useRegister() {
       resetCheckEmailAvailability();
     }
   };
-    return {
-      loading,
-      error,
-      accessToken,
-      emailonblurhandler,
-      submitform,
-      register,
-      handleSubmit,
-        emailAvailabilityStatus,
-      errors
-    };
+  return {
+    loading,
+    error,
+    accessToken,
+    emailonblurhandler,
+    submitform,
+    register,
+    handleSubmit,
+    emailAvailabilityStatus,
+    errors
+  };
 }

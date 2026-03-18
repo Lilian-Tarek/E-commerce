@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import ActGetpro from "@store/Act/ActGetPro";
-import type { Tloading } from "@types/Types";
-import type { TProductItem } from "@types/Types";
-import { isString } from "@types/Guards";
+import ActGetpro from "@store/Products/ActGetPro";
+import type { Tloading } from "@Types/Types";
+import type { TProductItem } from "@Types/Types";
+import { isString } from "@Types/Guards";
 interface IProductsState {
   products: TProductItem[];
   loading: Tloading;
@@ -19,10 +19,8 @@ const ProductsSlice = createSlice({
   initialState,
   reducers: {
     CleanUp: (state) => {
-      state.products = []
-        ;
-}
-
+      state.products = [];
+    }
   },
   extraReducers: (builder) => {
     builder.addCase(ActGetpro.pending, (state) => {
@@ -35,7 +33,7 @@ const ProductsSlice = createSlice({
     });
     builder.addCase(ActGetpro.rejected, (state, action) => {
       state.loading = "failed";
-      if (isString(action.payload )) {
+      if (isString(action.payload)) {
         state.error = action.payload;
       }
     });

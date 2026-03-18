@@ -1,5 +1,5 @@
-import type { TProductItem } from '@types/Types';
-import React, { memo } from 'react'
+import type { TProductItem } from '@Types/Types';
+import  { memo } from 'react'
 type CartItemsProps= TProductItem &{ 
   change: (id: number | string, quantity: number) => void;
   remove: (id: number | string)=>void
@@ -36,20 +36,11 @@ const CartItem =memo (({id,title, img, price, quantity, max,change,remove }: Car
           </button>
         </td>
 
-        {/* Price */}
+      
         <td className="text-center  p-5">${price}</td>
 
-        {/* Quantity */}
+        
         <td className="text-center  p-5 ">
-          {/* <select
-            value={quantity}
-            onChange={ChangeQuantity}
-            className="
-        border rounded px-3 py-1
-        border-primary border-2"
-          >
-            {RenderOption}
-          </select> */}
           <div className="relative  text-center flex justify-center">
             <select
               value={quantity}
@@ -69,41 +60,16 @@ const CartItem =memo (({id,title, img, price, quantity, max,change,remove }: Car
             >
               {RenderOption}
             </select>
-
-            {/* Arrow */}
             <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-primary">
               ▼
             </span>
           </div>
         </td>
 
-        {/* Total */}
-        <td className="text-center  p-5">${price * quantity}</td>
+        <td className="text-center  p-5">${Number(price) * quantity}</td>
       </tr>
     </>
 
-    // <>
-    //   <div>
-    //     <div>
-    //       <img src={img} className="w-50 h-50" />
-    //     </div>
-    //     <div>
-    //       <h2>{title}</h2>
-    //       <h3> {price}</h3>
-    //       <h3> {quantity}</h3>
-    //       <button className="mt-auto" onClick={()=>remove(id)}>Remove</button>
-    //     </div>
-    //   </div>
-
-    //   <div>
-    //     <form id="myForm">
-    //       <label>Quantity</label>
-    //       <select id="quantity" value={quantity} onChange={ChangeQuantity}>
-    //         {RenderOption}
-    //       </select>
-    //     </form>
-    //   </div>
-    // </>
   );
 }
 )

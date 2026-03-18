@@ -1,8 +1,8 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import AxiosErrrorHandler from "@util/AxiosError";
+import AxiosErrrorHandler from "@Util/AxiosError";
 import type { RootState } from "..";
-import type { TOrderItem } from "@types/Types";
+import type { TOrderItem } from "@Types/Types";
 import { Main_URL } from "../../Api/BaseUrl";
 type Tresponse = TOrderItem[];
 const ActGetOrdersForProfile = createAsyncThunk("orders/ActGetOrdersForProfile", async (_,thunkAPI) => {

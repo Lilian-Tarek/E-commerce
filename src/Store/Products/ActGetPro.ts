@@ -1,8 +1,8 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { Main_URL } from "../../Api/BaseUrl";
-import type{ Tproduct } from "@types/Types";
-import AxiosErrrorHandler from "@util/AxiosError";
+import type{ Tproduct } from "@Types/Types";
+import AxiosErrrorHandler from "@Util/AxiosError";
 const ActGetProducts = createAsyncThunk(
   "products/ActGetProducts",
   async (prefix:string, thunkAPI) => {

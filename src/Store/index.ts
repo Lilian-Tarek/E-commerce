@@ -8,17 +8,14 @@ import {
   PURGE,
   REGISTER
 } from "redux-persist";
-// import storage from "redux-persist/lib/storage";
-// import storage from "@store/persistStorage";
 import storage from 'redux-persist/es/storage'; 
-// لاحظ استخدام /es/ بدل /lib/ لضمان استخدام نسخة الـ Modules الحديثة
 import CategoriesSlice from '@store/Categories/CategorySlice'
 import ProductsSlice from '@store/Products/ProductSlice'
 import CartSlice from '@store/Cart/CartSlice'
 import WishListSlice from "@store/WishList/WishListSlice";
 import AuthSlice from "@store/Auth/AuthSlice"
 import OrderSlice from "@store/Order/OrderSlice"
-// import persistReducer from "redux-persist/es/persistReducer";
+import toastSlice from "@store/Toasts/ToastsSlice"
 const rootPersistConfig = {
   key: "root",
   storage,
@@ -31,24 +28,18 @@ const AuthPersistConfig = {
 };
 
 const CartPersistConfig = {
-  // key: "root",
   key:"CartSlice",
   storage,
   whitelist: ["items"]
 };
-// const WishListPersistConfig = {
-//   key: "wishlist",
-//   storage,
-//   whitelist:["ItemsIds"]
-// }
+
 const rootReducer = combineReducers({
   CategoriesSlice,
   ProductsSlice,
   CartSlice: persistReducer(CartPersistConfig, CartSlice),
   WishListSlice:WishListSlice,
-    // : persistReducer(WishListPersistConfig, WishListSlice),
   AuthSlice: persistReducer(AuthPersistConfig, AuthSlice),
-  OrderSlice
+  OrderSlice,toastSlice
 });
 const persistedReducer = persistReducer(rootPersistConfig, rootReducer)
 const store = configureStore({
@@ -61,9 +52,7 @@ const store = configureStore({
     })
 });
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch;
 const persistor = persistStore(store);
 export { persistor,store };

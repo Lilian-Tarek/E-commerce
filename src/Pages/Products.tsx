@@ -1,20 +1,13 @@
-import React from 'react'
 import Product from '@components/e-commerce/Product'
-import { useAppDispatch, useAppSelector } from '@store/hooks';
-import ActGetProducts from '@store/Act/ActGetPro';
-import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { CleanUp } from '@store/Products/ProductSlice';
 import { Loading } from "@components/feedback";
 import GridList from '@components/commons/GridList';
 import Heading from '@components/commons/Heading';
-import WishList from '@components/e-commerce/WishList';
 import useProducts from '@hooks/useProducts';
 const Products = () => {
   const {loading,error,params,ProductsFullInfo } = useProducts();
   return (
     <>
-      <Heading title={`${params.prefix}Products`} />
+      <Heading title={`${params.prefix} Products`} />
       <Loading loading={loading} error={error} type={"product"} count={ProductsFullInfo.length||5}>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 my-5">
           <GridList

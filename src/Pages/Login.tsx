@@ -1,23 +1,12 @@
-
-import { useForm } from "react-hook-form";
 import Heading from "@components/commons/Heading";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { signin, type TFormInputs } from "@validation/LoginSchema";
 import Form from "@components/form/Form";
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { useAppDispatch } from "@store/hooks";
-import actAuthLogin from "@store/Act/ActLogin";
-import type { SubmitHandler } from "react-hook-form";
-import { useAppSelector } from "@store/hooks";
-import { ResetUi } from "@store/Auth/AuthSlice";
-import { useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import useLogin from "@hooks/useLogin";
+import { IoIosWarning } from "react-icons/io";
 const Login = () => {
   const {
     submitForm,
     searchParams,
-    setSearchParams,
     register,
     handleSubmit,
     errors,
@@ -32,11 +21,18 @@ const Login = () => {
     <>
       <Heading title="User Login" />
       {searchParams.get("message") === "account_created" && (
-        <p className="success">Account created successfully</p>
+        <p className="font-bold text-center text-2xl text-green-600 my-3">
+          Account created successfully
+        </p>
       )}
 
       {searchParams.get("message") === "login_required" && (
-        <p className="error">Login required</p>
+        <p className="font-bold text-center text-xl text-red-500 flex justify-center items-center gap-2 my-3">
+          <span className="inline-block">
+            <IoIosWarning className="text-5xl" />
+          </span>
+          Login required
+        </p>
       )}
       <div className=" flex items-center justify-center px-4">
         <form

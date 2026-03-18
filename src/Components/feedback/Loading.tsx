@@ -1,4 +1,4 @@
-import type { Tloading } from "@types/Types"
+import type { Tloading } from "@Types/Types"
 import CategorySkeleton from "./Skeletons/CategorySkeleton"
 import ProductSkeleton from "./Skeletons/ProductSkeleton"
 import CartSkeleton from "./Skeletons/CartSkeleton"

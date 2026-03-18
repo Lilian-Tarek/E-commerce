@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { Main_URL } from "../../Api/BaseUrl";
-import AxiosErrrorHandler from "@util/AxiosError";
+import AxiosErrrorHandler from "@Util/AxiosError";
 import type { RootState } from "..";
 const ActLikes = createAsyncThunk("wishlist/ActLikes", async (id: number | string, thunkAPI) => {
     const { rejectWithValue,getState } = thunkAPI;

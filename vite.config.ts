@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { resolve } from 'path';
+// import { resolve } from 'path';
 import tailwindcss from "@tailwindcss/vite";
 import path from 'path'
 // https://vite.dev/config/
@@ -14,9 +14,9 @@ export default defineConfig({
       "@routes": path.resolve(__dirname, "./src/routes"),
       "@store": path.resolve(__dirname, "./src/store"),
       "@layout": path.resolve(__dirname, "./src/layout"),
-      "@util": path.resolve(__dirname, "./src/util"),
+      "@Util": path.resolve(__dirname, "./src/Util"),
       "@services": path.resolve(__dirname, "./src/services"),
-      "@types": path.resolve(__dirname, "./src/types"),
+      "@Types": path.resolve(__dirname, "./src/Types"),
       "@validation": path.resolve(__dirname,"./src/Validation")
     }
   },

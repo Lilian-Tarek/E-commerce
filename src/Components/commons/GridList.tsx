@@ -1,10 +1,10 @@
-import React from 'react'
 import Lottie from "lottie-react";
 import NoResult from "../../Assets/noresultfound.json";
-type GridList <T,>= {
+type GridList <T>= {
     records: T[];
 renderItem:(record:T)=>React.ReactNode
 }
+
 const GridList =<T,> ({ records, renderItem }: GridList<T>) => {
     return (
       <>

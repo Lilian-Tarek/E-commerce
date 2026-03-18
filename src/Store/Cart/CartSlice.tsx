@@ -1,19 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit"
-import type { Tloading, Tproduct } from "@types/Types";
-import ActGetCartItems from "@store/Act/ActGetCartItems";
-import { isString } from "@types/Guards";
-interface Icartstate{
-    items: { [key: number|string]: number },
-  productFullInfo: Tproduct,
-  loading: Tloading,
-  error:null|string
+import { createSlice } from "@reduxjs/toolkit";
+import type { Tloading, Tproduct } from "@Types/Types";
+import ActGetCartItems from "@store/Cart/ActGetCartItems";
+import { isString } from "@Types/Guards";
+interface Icartstate {
+  items: { [key: number | string]: number };
+  productFullInfo: Tproduct;
+  loading: Tloading;
+  error: null | string;
 }
-const initialState:Icartstate = {
-    items: {},
+const initialState: Icartstate = {
+  items: {},
   productFullInfo: [],
   loading: "idle",
-    error:null
-}
+  error: null
+};
 const CartSlice = createSlice({
   name: "cart",
   initialState,
@@ -62,5 +62,11 @@ const CartSlice = createSlice({
   }
 });
 
-export const {AddToCart,CartItemsChangeQuantity,RemoveFromCart,CleanCart,CleanCartAfterBuying} = CartSlice.actions;
+export const {
+  AddToCart,
+  CartItemsChangeQuantity,
+  RemoveFromCart,
+  CleanCart,
+  CleanCartAfterBuying
+} = CartSlice.actions;
 export default CartSlice.reducer;

@@ -2,33 +2,33 @@
   "categories": [
     {
       "id": 1,
-      "title": "men",
-      "prefix": "men",
-      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/cfb357649428__hp-w12-22032022-h_m-men.jpg"
+      "title": "Men",
+      "prefix": "Men",
+      "img": "https://plus.unsplash.com/premium_photo-1672239496290-5061cfee7ebb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 2,
-      "title": "women",
-      "prefix": "women",
-      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/30d354267a09b__hp-w12-22032022-h_m-women_dresses.jpg"
+      "title": "Women",
+      "prefix": "Women",
+      "img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 3,
-      "title": "kids",
-      "prefix": "kids",
+      "title": "Kids",
+      "prefix": "Kids",
       "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/37d243d334c63__hp-w12-22032022-h_m-kids1.jpg"
     },
     {
       "id": 4,
-      "title": "baby",
-      "prefix": "baby",
-      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/28948d47ae6e8__h_m-w39-28092022-4066c-1x1.jpg"
+      "title": "Baby",
+      "prefix": "Baby",
+      "img": "https://images.unsplash.com/photo-1608365151231-7dbed3034787?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 5,
-      "title": "sport",
-      "prefix": "sport",
-      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/1dda9ae79a671__h_m-w40-06102022-7416b-1x1.jpg"
+      "title": "Sport",
+      "prefix": "Sport",
+      "img": "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
   "products": [
@@ -36,15 +36,15 @@
       "id": 1,
       "title": "Regular Fit Jersey top",
       "price": "249.00",
-      "cat_prefix": "men",
-      "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "cat_prefix": "Men",
+      "img": "https://images.unsplash.com/photo-1718731236356-3b984904ac7d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dc",
       "max": 4
     },
     {
       "id": 2,
       "title": "Regular Fit Jersey top",
       "price": "229.00",
-      "cat_prefix": "men",
+      "cat_prefix": "Men",
       "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
       "max": 4
     },
@@ -52,414 +52,109 @@
       "id": 3,
       "title": "Cotton polo shirt",
       "price": "200.00",
-      "cat_prefix": "men",
-      "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4",
+      "cat_prefix": "Men",
+      "img": "https://images.unsplash.com/photo-1671438118097-479e63198629?q=80&w=877&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "max": 4
     },
     {
       "id": 4,
       "title": "Cotton t-shirt",
       "price": "100.00",
-      "cat_prefix": "women",
-      "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+      "cat_prefix": "Women",
+      "img": "https://images.unsplash.com/photo-1759572095384-1a7e646d0d4f?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "max": 4
     },
     {
       "id": 5,
-      "title": "Sweatshirt shorts",
+      "title": "Sweatshirt",
       "price": "300.00",
-      "cat_prefix": "women",
-      "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
+      "cat_prefix": "Women",
+      "img": "https://plus.unsplash.com/premium_photo-1690034979560-d8a1fecb653e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "max": 4
     },
     {
       "id": 6,
       "title": "Velour top",
       "price": "300.00",
-      "cat_prefix": "kids",
-      "img": "https://images.unsplash.com/photo-1604916287784-c324202b320c",
+      "cat_prefix": "Kids",
+      "img": "https://plus.unsplash.com/premium_photo-1678218594563-9fe0d16c6838?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "max": 4
     },
     {
       "id": 9,
-      "title": "Pile all-in-one suit with ears",
+      "title": "Pile all-in-one suit",
       "price": "500.00",
-      "cat_prefix": "baby",
-      "img": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea",
+      "cat_prefix": "Baby",
+      "img": "https://images.unsplash.com/photo-1672862621192-850af71d9aa6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "max": 4
     },
     {
       "id": 17,
       "title": "Regular Fit football shirt",
       "price": "449.00",
-      "cat_prefix": "sport",
-      "img": "https://images.unsplash.com/photo-1517649763962-0c623066013b",
+      "cat_prefix": "Sport",
+      "img": "https://plus.unsplash.com/premium_photo-1684888644153-5b8599b7ea05?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "max": 4
     }
   ],
   "wishlist": [
     {
-      "userId": "11",
-      "productId": 5,
-      "id": 8
-    },
-    {
-      "userId": "11",
-      "productId": 4,
-      "id": 9
-    },
-    {
-      "userId": "14",
-      "productId": 1,
-      "id": 12
-    },
-    {
-      "userId": "14",
+      "userId": "2",
       "productId": 2,
-      "id": 13
-    },
-    {
-      "userId": "1",
-      "productId": 1,
-      "id": 14
-    },
-    {
-      "userId": "1",
-      "productId": 2,
-      "id": 15
+      "id": 1
     }
   ],
   "users": [
     {
       "email": "liliantarek4@gmail.com",
-      "password": "$2a$10$TSKWUDyvUCAtmBkgfCpcq.6o1MneGHhy/Q3es4SQO5jGAlxcIo346",
-      "firstName": "lilian",
+      "password": "$2a$10$Joerx09m.tEhOeIdDdzKCeIUQ/3ueNUWUmUqpgPEinAPayVo/ZaIi",
+      "firstName": "Lilian",
       "lastName": "tarek",
       "id": 1
     },
     {
       "email": "dinatarek@gmail.com",
-      "password": "$2a$10$/qU85s3KKj.SA6d7YLEAjOlH6Vh41p4lLKJxa04ZAQTxfP9c.5AGW",
+      "password": "$2a$10$gB.YAWM3yGCajcIS5SXHu.96AUw8GSHg8Goi4L5PgtEMyzDg7cBEC",
       "firstName": "Dina",
       "lastName": "Tarek",
       "id": 2
-    },
-    {
-      "email": "peter@gmail.com",
-      "password": "$2a$10$E8mylxJzHOrRcCM1NHNVHOVydk1ProklW18K/JLppB5WXOa245tSW",
-      "firstName": "peter",
-      "lastName": "tarek",
-      "id": 3
-    },
-    {
-      "email": "loli@gmail.com",
-      "password": "$2a$10$TI.7qTbsVfPrlCaCPuMvveKVrpaKhf./Aj1KxDpqpszyMW1iNxMTG",
-      "firstName": "lilia",
-      "lastName": "tarek",
-      "id": 4
-    },
-    {
-      "email": "Shrouk@gmail.com",
-      "password": "$2a$10$Lbdi4X3ShaNYIt.mx10a9OonxJJbXnkvGd9rAOCAqe.reVC9dJ3Y.",
-      "firstName": "lilian",
-      "lastName": "tarek",
-      "id": 5
-    },
-    {
-      "email": "lolo@gmail.com",
-      "password": "$2a$10$di8WiODoFCCt4ocukybmUODELiwEJwiPbPnTgAia1AeyUYqXD44vu",
-      "firstName": "lolo",
-      "lastName": "lolo",
-      "id": 6
-    },
-    {
-      "email": "lailaahmed@gmail.com",
-      "password": "$2a$10$VJ.mMJ0WKjy.Ih/Kp7rgNOTL4mQbV4cSI2Nch2erXppTT0P35bxe.",
-      "firstName": "laila",
-      "lastName": "ahmed",
-      "id": 7
-    },
-    {
-      "email": "liliantarek4@gmail.co",
-      "password": "$2a$10$cQNF1cZ1NqB2V8zeqZg9l.pFAX8TdzEmug6MdvPtNyeAIfzDUixwy",
-      "firstName": "lilian",
-      "lastName": "tarek",
-      "id": 8
-    },
-    {
-      "email": "pepo@gmail.com",
-      "password": "$2a$10$ZDyorpH4ybW/bectgqO52emBcXavxmDRVHJjBcNeXf3xtJh2obtFK",
-      "firstName": "pepo",
-      "lastName": "pepo",
-      "id": 9
-    },
-    {
-      "email": "lili@gmail.com",
-      "password": "$2a$10$M3pnqnWsdWAecgfAVG0NaeF0LSekxw.qDAEwNDFr2FbeTvh.amTI2",
-      "firstName": "lilian",
-      "lastName": "tarek",
-      "id": 10
-    },
-    {
-      "email": "shosho@gmail.com",
-      "password": "$2a$10$kwBrXt0AbJi8nyp11VWry.7g/uWv4aqLGWTOl14wZ1evrrvGUkv1O",
-      "firstName": "lilian",
-      "lastName": "tarek",
-      "id": 11
-    },
-    {
-      "email": "hi@gmail.com",
-      "password": "$2a$10$NlwPmlVo7EPshyOf3Qm5Juib0xDhasgR6ag7CirAPDF1.1Tmi/OH.",
-      "firstName": "hi",
-      "lastName": "hi",
-      "id": 12
-    },
-    {
-      "email": "loliloli@gmail.com",
-      "password": "$2a$10$SO0zksGB1hDBbxeT/.UzlufGUJa0ax7Xvm8N4hja91n8xeggfH1pm",
-      "firstName": "loli",
-      "lastName": "loli",
-      "id": 13
-    },
-    {
-      "email": "pepo@ggmail.com",
-      "password": "$2a$10$cXwfmdpaEZFn0fMNJOOUQen8yYCVM2kXR/oG4JqF956HlKyWcMW8e",
-      "firstName": "lilian",
-      "lastName": "tarek",
-      "id": 14
-    },
-    {
-      "email": "dinadina@gmail.com",
-      "password": "$2a$10$EHjSLT4gL0dSG9dRwh5LpO8FL6WzAsbFcRA.ZPGJOxmUcT8U4GAD2",
-      "firstName": "dina",
-      "lastName": "tarek",
-      "id": 15
     }
   ],
   "orders": [
     {
-      "userId": 1,
+      "userId": 2,
       "items": [
-        {
-          "id": 1,
-          "title": "Regular Fit Jersey top",
-          "price": "249.00",
-          "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
-          "quantity": 1
-        },
         {
           "id": 2,
           "title": "Regular Fit Jersey top",
           "price": "229.00",
           "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
-          "quantity": 1
+          "quantity": 2
         }
       ],
-      "subtotal": 478,
+      "subtotal": 458,
       "id": 1
     },
     {
-      "userId": 1,
+      "userId": 2,
       "items": [
         {
-          "id": 1,
-          "title": "Regular Fit Jersey top",
-          "price": "249.00",
-          "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
-          "quantity": 3
-        },
-        {
-          "id": 2,
-          "title": "Regular Fit Jersey top",
-          "price": "229.00",
-          "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
+          "id": 4,
+          "title": "Cotton t-shirt",
+          "price": "100.00",
+          "img": "https://images.unsplash.com/photo-1759572095384-1a7e646d0d4f?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "quantity": 1
         },
         {
-          "id": 3,
-          "title": "Cotton polo shirt",
-          "price": "200.00",
-          "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4",
-          "quantity": 3
+          "id": 5,
+          "title": "Sweatshirt",
+          "price": "300.00",
+          "img": "https://plus.unsplash.com/premium_photo-1690034979560-d8a1fecb653e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "quantity": 1
         }
       ],
-      "subtotal": 1576,
+      "subtotal": 400,
       "id": 2
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 1,
-          "title": "Regular Fit Jersey top",
-          "price": "249.00",
-          "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
-          "quantity": 1
-        }
-      ],
-      "subtotal": 249,
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 6,
-          "title": "Velour top",
-          "price": "300.00",
-          "img": "https://images.unsplash.com/photo-1604916287784-c324202b320c",
-          "quantity": 2
-        }
-      ],
-      "subtotal": 600,
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 5,
-          "title": "Sweatshirt shorts",
-          "price": "300.00",
-          "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
-          "quantity": 1
-        }
-      ],
-      "subtotal": 300,
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 4,
-          "title": "Cotton t-shirt",
-          "price": "100.00",
-          "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
-          "quantity": 1
-        }
-      ],
-      "subtotal": 100,
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 17,
-          "title": "Regular Fit football shirt",
-          "price": "449.00",
-          "img": "https://images.unsplash.com/photo-1517649763962-0c623066013b",
-          "quantity": 2
-        }
-      ],
-      "subtotal": 898,
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 4,
-          "title": "Cotton t-shirt",
-          "price": "100.00",
-          "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
-          "quantity": 1
-        },
-        {
-          "id": 5,
-          "title": "Sweatshirt shorts",
-          "price": "300.00",
-          "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
-          "quantity": 1
-        }
-      ],
-      "subtotal": 400,
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 4,
-          "title": "Cotton t-shirt",
-          "price": "100.00",
-          "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
-          "quantity": 2
-        },
-        {
-          "id": 5,
-          "title": "Sweatshirt shorts",
-          "price": "300.00",
-          "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
-          "quantity": 1
-        }
-      ],
-      "subtotal": 500,
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 2,
-          "title": "Regular Fit Jersey top",
-          "price": "229.00",
-          "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
-          "quantity": 1
-        },
-        {
-          "id": 3,
-          "title": "Cotton polo shirt",
-          "price": "200.00",
-          "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4",
-          "quantity": 1
-        }
-      ],
-      "subtotal": 429,
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "id": 4,
-          "title": "Cotton t-shirt",
-          "price": "100.00",
-          "img": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
-          "quantity": 1
-        },
-        {
-          "id": 5,
-          "title": "Sweatshirt shorts",
-          "price": "300.00",
-          "img": "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
-          "quantity": 1
-        }
-      ],
-      "subtotal": 400,
-      "id": 11
-    },
-    {
-      "userId": 15,
-      "items": [
-        {
-          "id": 2,
-          "title": "Regular Fit Jersey top",
-          "price": "229.00",
-          "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
-          "quantity": 1
-        },
-        {
-          "id": 3,
-          "title": "Cotton polo shirt",
-          "price": "200.00",
-          "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4",
-          "quantity": 1
-        }
-      ],
-      "subtotal": 429,
-      "id": 12
     }
   ]
 }

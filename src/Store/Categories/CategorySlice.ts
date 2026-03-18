@@ -1,18 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
-import ActGetcategories from "@store/Act/ActGetCat";
-import type{ Tloading } from "@types/Types";
-import type { Tcategory } from "@types/Types";
-import { isString } from "@types/Guards";
-interface ICategoriesState{
-  categories:Tcategory[]
-  loading: Tloading,
-  error:string|null
+import ActGetcategories from "@store/Categories/ActGetCat";
+import type { Tloading } from "@Types/Types";
+import type { Tcategory } from "@Types/Types";
+import { isString } from "@Types/Guards";
+interface ICategoriesState {
+  categories: Tcategory[];
+  loading: Tloading;
+  error: string | null;
 }
 
-const initialState:ICategoriesState = {
-    categories: [],
+const initialState: ICategoriesState = {
+  categories: [],
   loading: "idle",
-    error:null
+  error: null
 };
 const categoriesSlice = createSlice({
   name: "Categories",
@@ -25,20 +25,18 @@ const categoriesSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(ActGetcategories.pending, (state) => {
       state.loading = "pending";
-      state.error = null
+      state.error = null;
     });
-        builder.addCase(ActGetcategories.fulfilled, (state,action) => {
-          state.loading = "succeeded";
-          state.categories = action.payload;
-        });
-        builder.addCase(ActGetcategories.rejected, (state, action) => {
-          state.loading = "failed";
-          if (isString(action.payload))
-          {
- state.error = action.payload;
-          }
-         
-        });
+    builder.addCase(ActGetcategories.fulfilled, (state, action) => {
+      state.loading = "succeeded";
+      state.categories = action.payload;
+    });
+    builder.addCase(ActGetcategories.rejected, (state, action) => {
+      state.loading = "failed";
+      if (isString(action.payload)) {
+        state.error = action.payload;
+      }
+    });
   }
 });
 // export { ActGetcategories };

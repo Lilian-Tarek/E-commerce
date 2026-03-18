@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "@store/hooks";
-import ActGetCartItems from "@store/Act/ActGetCartItems";
+import ActGetCartItems from "@store/Cart/ActGetCartItems";
 
 import {
   CartItemsChangeQuantity,
@@ -9,6 +9,7 @@ import {
 } from "@store/Cart/CartSlice";
 import { useCallback } from "react";
 import { ResetOrderStatus } from "@store/Order/OrderSlice";
+import type { TProductItem } from "@Types/Types";
 export default function useCart() {
   const dispatch = useAppDispatch();
   const { items, productFullInfo, loading, error } = useAppSelector(
@@ -23,10 +24,10 @@ export default function useCart() {
     return () => {
       promise.abort();
       dispatch(CleanCart());
-      dispatch(ResetOrderStatus())
+      dispatch(ResetOrderStatus());
     };
   }, [dispatch]);
-  const products = productFullInfo.map((el) => ({
+  const products = productFullInfo.map((el: TProductItem) => ({
     ...el,
     quantity: items[el.id]
   }));
@@ -37,12 +38,12 @@ export default function useCart() {
     [dispatch]
   );
   const RemoveItemHandler = useCallback(
-    (id: number) => {
+    (id: number | string) => {
       dispatch(RemoveFromCart(id));
     },
     [dispatch]
   );
-  const placeOrderStatus = useAppSelector(state=>state.OrderSlice.loading);
+  const placeOrderStatus = useAppSelector((state) => state.OrderSlice.loading);
   return {
     loading,
     error,

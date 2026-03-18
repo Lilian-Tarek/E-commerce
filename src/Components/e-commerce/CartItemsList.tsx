@@ -1,6 +1,5 @@
-import React from 'react'
 import CartItem from './CartItem'
-import type { Tproduct } from '@types/Types'
+import type { Tproduct } from '@Types/Types'
 type CartItemProps = {
   products: Tproduct;
   change: (id: number | string, quantity: number) => void;
@@ -11,7 +10,6 @@ const CartItemsList = ({ products,change,remove }: CartItemProps) => {
          return (
            <>
          
-    
                <CartItem key={el.id} {...el} change={change} remove={remove} />
           
            </>

@@ -1,7 +1,4 @@
-import React, { type ReactNode } from 'react'
-import { IoCartSharp } from 'react-icons/io5'
-import { useAppSelector } from '@store/hooks'
-import { GetCartTotalQuantity } from '@store/Selectors'
+import { type ReactNode } from 'react'
 import { useEffect,useState } from 'react'
 import { Link } from 'react-router-dom'
 type HeaderCounter= {
@@ -13,10 +10,14 @@ const HeaderCounter = ({Total,icon,page}:HeaderCounter) => {
 
   const [Animate, SetIsAnimate] = useState(false);
   useEffect(() => {
-    if (!Total) { return; }
-    SetIsAnimate(true);
-    const debounce=setTimeout(()=>{SetIsAnimate(false)},300)
-    return ()=>clearTimeout(debounce);
+    if (!Total) return;
+    const timeout = setTimeout(() => {
+      SetIsAnimate(true);
+      const timeoutOff = setTimeout(() => SetIsAnimate(false), 300);
+      return () => clearTimeout(timeoutOff);
+    }, 0);
+
+    return () => clearTimeout(timeout);
   }, [Total]);
   return (
     <div>

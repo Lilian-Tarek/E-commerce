@@ -1,14 +1,6 @@
-import { useForm } from "react-hook-form";
 import Heading from "@components/commons/Heading";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { signup, type TFormInputs } from "@validation/RegisterationSchema";
 import Form from "@components/form/Form";
-import useCheckEmailAvail from "@hooks/useCheckEmailAvail";
-import ActAuthRegister from "@store/Act/ActAuthRegister";
-import { useAppDispatch, useAppSelector } from "@store/hooks";
-import { useNavigate,Navigate } from "react-router-dom";
-import { ResetUi } from "@store/Auth/AuthSlice";
-import { useEffect } from "react";
+import { Navigate } from "react-router-dom";
 import useRegister from "@hooks/useRegister";
 const Register = () => {
  const {

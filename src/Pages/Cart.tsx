@@ -1,4 +1,3 @@
-import React, { useCallback } from 'react'
 import Heading from '@components/commons/Heading'
 import CartItemsList from '@components/e-commerce/CartItemsList';
 import CartTotalPrice from '@components/e-commerce/CartTotalPrice';
@@ -44,7 +43,6 @@ const Cart = () => {
         ) : placeOrderStatus === "succeeded" ? (
           <div className="w-full flex justify-center ">
               <Lottie animationData={success} className="w-100" />
-              <h1 className='text-primary d-block'>All ok!</h1>
           </div>
         ) : (
           <div className="w-full flex justify-center">

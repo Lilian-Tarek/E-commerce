@@ -1,11 +1,9 @@
-import React, { Suspense } from 'react'
+
 import { lazy } from 'react';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 const MainLayout = lazy(() => import("@layout/MainLayout"));
 const ProfileLayout = lazy(() => import("@layout/ProfileLayout"));
-import SandyLoading from '../Assets/SandyLoading.json'
 const Home = lazy(() => import("@pages/Home"));
-const About = lazy(() => import("@pages/About"));
 const Register = lazy(() => import("@pages/Register"));
 const Categories = lazy(() => import("@pages/Categories"));
 const  Products= lazy(() => import("@pages/Products"));
@@ -14,8 +12,7 @@ const Orders = lazy(() => import("@pages/Orders"));
 import Error from '@pages/Error';
 const  Cart= lazy(() => import("@pages/Cart"));
 const WishListPage = lazy(() => import("@pages/WishListPage"));
-const ProfilePage = lazy(() => import("@pages/Profile"));
-import Lottie from "lottie-react"; 
+const ProfilePage = lazy(() => import("@pages/Profile")); 
 import SuspenseHandler from '@components/feedback/SuspenseHandler';
 import ProtectedRoute from '@components/auth/ProtectedRoute';
 const router = createBrowserRouter([
@@ -65,14 +62,6 @@ const router = createBrowserRouter([
         }
       },
       {
-        path: "/about",
-        element: (
-          <SuspenseHandler>
-            <About />
-          </SuspenseHandler>
-        )
-      },
-      {
         path: "/login",
         element: (
           <SuspenseHandler>
@@ -91,9 +80,11 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: (
-          <SuspenseHandler>
-            <Cart />
-          </SuspenseHandler>
+          <ProtectedRoute>
+            <SuspenseHandler>
+              <Cart />
+            </SuspenseHandler>
+          </ProtectedRoute>
         )
       },
       {
@@ -125,7 +116,7 @@ const router = createBrowserRouter([
             )
           },
           {
-            path:"orders",
+            path: "orders",
             element: (
               <SuspenseHandler>
                 <Orders />

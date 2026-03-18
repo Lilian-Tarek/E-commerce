@@ -1,5 +1,5 @@
 import axios from "axios";
-import AxiosErrrorHandler from "@util/AxiosError";
+import AxiosErrrorHandler from "@Util/AxiosError";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import type{ RootState } from "..";
 import { Main_URL } from "../../Api/BaseUrl";

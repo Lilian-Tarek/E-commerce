@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useState } from "react";
-import React from 'react'
 import { Main_URL } from "../Api/BaseUrl";
 type TStatus = "idle" | "checking" | "available" | "notAvailable" | "failed";
 const useCheckEmailAvail = () => {
@@ -19,7 +18,7 @@ const useCheckEmailAvail = () => {
        setEmailAvailabilityStatus("notAvailable");
        
      }
-   } catch (error) {
+   } catch{
      setEmailAvailabilityStatus("failed");
    }
     };

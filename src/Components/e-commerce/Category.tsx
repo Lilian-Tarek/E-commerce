@@ -6,7 +6,7 @@ interface IProps {
   prefix: string;
   img: string;
 }
-const Category = ({id,title,prefix,img}:IProps) => {
+const Category = ({title,prefix,img}:IProps) => {
   return (
     <div className="flex justify-center">
       <Link to={`/categories/products/${prefix}`}>
@@ -20,19 +20,6 @@ const Category = ({id,title,prefix,img}:IProps) => {
         </div>
       </Link>
     </div>
-
-    // <Link to={`/categories/products/${prefix}`}>
-    //   <div className="my-3 ">
-
-    //       <div className="flex justify-center">
-    //         <img className="rounded w-70 h-60" src={img} alt={title} />
-    //       </div>
-    //       <h4 className="text-center my-1 font-semibold text-3xl text-primary">
-    //         {title}
-    //       </h4>
-    //     </div>
-
-    // </Link>
   );
 };
 
