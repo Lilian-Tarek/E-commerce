@@ -1,4 +1,5 @@
 # 🛒 <p align="center">Advanced E-Commerce Architecture</p>
+https://www.linkedin.com/posts/lilian-tarek-974259289_reactjs-typescript-tailwindcss-ugcPost-7442166347125522435-THFx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEX7fygBz4hKxTTiWpqmUXSAlpw8xbLgXpc
 ---
 
 > **A scalable, production-ready React platform built with a focus on professional design patterns and robust state management.**
